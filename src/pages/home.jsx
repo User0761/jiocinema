@@ -23,7 +23,7 @@ export default function Home()
 
         try 
         {
-            let movieResponse  = await fetch("http://localhost:3000/movies");
+            let movieResponse  = await fetch("https://user0761.github.io/testapi/movies_data.json");
             let moviesData = await movieResponse.json();
 
             setMovies(moviesData);
